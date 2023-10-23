@@ -10,6 +10,7 @@ export default defineConfig({
             name: 'app',
             remotes: {
                 remoteApp: 'http://localhost:5001/assets/remoteEntry.js',
+                angularRemote: 'http://localhost:4200/remoteEntry.js',
                 /*nextRemoteApp: {
                     external: 'http://localhost:3000/_next/static/chunks/remoteEntry.js',
                     externalType: 'url',

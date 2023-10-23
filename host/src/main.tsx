@@ -6,8 +6,12 @@ import HostApp from "./App.tsx";
 import {createBrowserRouter, RouterProvider} from "react-router-dom";
 import Home from "./Home.tsx";
 
+
 // @ts-ignore
 import App from "remoteApp/App";
+// @ts-ignore
+import Angular from './modules/Angular';
+
 
 
 const router = createBrowserRouter([
@@ -26,8 +30,12 @@ const router = createBrowserRouter([
                     }]
             },
             {
-                path: "/crispy-booking/*",
+                path: "/vite-react-remote/*",
                 element: <App/>
+            },
+            {
+                path: "/angular-remote/*",
+                element: <Angular/>
             },
         ]
     },
